@@ -4,8 +4,6 @@
 x = random(768) + 16
 y = random(768) + 16
 
-effect_create_below(ef_flare,x,y,2,c_red)
-
 if (global.clicks < 10) {
 	gem = "red"
 }
@@ -18,3 +16,18 @@ else if (global.clicks < 30) {
 else {
 	gem = choose("red", "blue", "green", "diamond")
 }
+
+if (gem = "red") {
+	flare_color = c_red
+}
+else if (gem = "blue") {
+	flare_color = c_blue
+}
+else if (gem = "green") {
+	flare_color = c_green
+}
+else {
+	flare_color = c_white
+}
+
+effect_create_below(ef_flare,x,y,2,flare_color)
