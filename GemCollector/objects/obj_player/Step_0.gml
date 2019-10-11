@@ -15,7 +15,7 @@ if (point_distance(x, y, mouse_x, mouse_y) > walkingSpeed) {
 }
 
 if mouse_x > x {
-	image_xscale = 2 * 1
+	image_xscale = 1 * 1
 } else {
-	image_xscale = 2 * -1
+	image_xscale = 1 * -1
 }
