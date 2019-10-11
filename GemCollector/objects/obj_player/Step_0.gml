@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (point_distance(x,y,mouse_x,mouse_y) > 100) {
+if ((point_distance(x,y,mouse_x,mouse_y) > 200) || keyboard_check(vk_lshift)) {
 	move_towards_point(mouse_x, mouse_y, runningSpeed)
 	sprite_index = spr_player_running
 } else if (point_distance(x, y, mouse_x, mouse_y) > walkingSpeed) {
