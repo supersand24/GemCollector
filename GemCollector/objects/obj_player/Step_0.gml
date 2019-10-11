@@ -5,11 +5,9 @@
 if point_distance(x, y, mouse_x, mouse_y) > playerSpeed {
     move_towards_point(mouse_x, mouse_y, playerSpeed)
 	sprite_index = spr_player_walking
-	image_speed = 1
 } else {
 	speed = 0
-	sprite_index = spr_player
-	image_speed = 0
+	sprite_index = spr_player_idle
 }
 
 if mouse_x > x {
