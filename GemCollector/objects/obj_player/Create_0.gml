@@ -3,7 +3,8 @@
 
 image_xscale = 2
 image_yscale = 2
-playerSpeed = 4
+walkingSpeed = 3
+runningSpeed = 5
 
 //Animation
 image_index = 0

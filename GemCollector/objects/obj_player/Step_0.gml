@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-if point_distance(x, y, mouse_x, mouse_y) > playerSpeed {
-    move_towards_point(mouse_x, mouse_y, playerSpeed)
+if (point_distance(x,y,mouse_x,mouse_y) > 100) {
+	move_towards_point(mouse_x, mouse_y, runningSpeed)
+	sprite_index = spr_player_running
+} else if (point_distance(x, y, mouse_x, mouse_y) > walkingSpeed) {
+    move_towards_point(mouse_x, mouse_y, walkingSpeed)
 	sprite_index = spr_player_walking
 } else {
 	speed = 0
